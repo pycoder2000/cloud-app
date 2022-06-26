@@ -4,7 +4,7 @@
 
 ![Simple TailwindCSS template preview](https://github.com/pycoder2000/cloud-app/blob/main/src/assets/images/Mock.png?raw=true)
 
-<div align=center>
+<div align=justified>
 
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
