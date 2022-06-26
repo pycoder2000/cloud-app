@@ -4,9 +4,13 @@
 
 ![Simple TailwindCSS template preview](https://github.com/pycoder2000/cloud-app/blob/main/src/assets/images/Mock.png?raw=true)
 
-<div align=justified>
+<div align="center">
 
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+
+</div>
+
+<div align=justified>
 
 This landing page is an open source, generic landing page template built with **[Tailwind CSS](https://tailwindcss.com/)** and coded entirely with **[React](https://reactjs.org/)**. This webpage is designed to provide all the basic components a developer need to create a landing page for SaaS products, online services, and more. This was followed by this **[YouTube Tutorial](https://www.youtube.com/watch?v=TVQnhcVFTVs)**. Use it for whatever you want, and be sure to reach me out on **[Twitter](https://twitter.com/lone_Musk)** if you want to build anything cool/useful with it.
 
