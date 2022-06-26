@@ -3,6 +3,7 @@ import AllInOne from "./components/AllInOne";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Plans from "./components/Plans";
 import Pricing from "./components/Pricing";
 import Support from "./components/Support";
 
@@ -15,6 +16,7 @@ function App() {
       <Support />
       <AllInOne />
       <Pricing />
+      <Plans />
       <Footer />
     </>
   );

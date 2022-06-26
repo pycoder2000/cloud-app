@@ -46,3 +46,7 @@
   background-size: 100% 2px;
   background-position: 0 100%;
 }
+
+input[type="radio"]:checked + span {
+  @apply block;
+}
