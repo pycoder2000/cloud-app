@@ -43,10 +43,23 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden md:flex pr-4">
-          <button className="border-none bg-transparent text-black mr-4">
+          <button className="text-black mr-4 items-center bg-zinc-200 border-1 py-3 px-8 focus:outline-none hover:bg-indigo-600 hover:text-white text-base mt-4 md:mt-0">
             Sign In
           </button>
-          <button className="px-8 py-3">Sign Up</button>
+          <button className="inline-flex px-8 py-3 mt-4 md:mt-0">
+            Sign Up{" "}
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-6 h-6 ml-1"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
         </div>
         <div className="md:hidden mr-4" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
@@ -105,7 +118,7 @@ const Navbar = () => {
         </li>
 
         <div className="flex flex-col my-4">
-          <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">
+          <button className="bg-transparent border-1 text-black px-8 py-3 mb-4 focus:outline-none hover:bg-indigo-600 hover:text-white">
             Sign In
           </button>
           <button className="px-8 py-3">Sign Up</button>
