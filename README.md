@@ -16,14 +16,14 @@ This landing page is an open source, generic landing page template built with **
 
 </div>
 
-## Getting Started
+## 🛠 Getting Started
 
 Choose one of the following options to get started:
 * [Download the zip](https://github.com/pycoder2000/cloud-app/archive/refs/heads/main.zip)
 * Clone the repo: `git clone https://github.com/pycoder2000/cloud-app.git`
 * Fork the repo
 
-## Usage
+## 🏗️ Usage
 
 #### Project setup
 ```
@@ -40,10 +40,26 @@ npm run dev
 npm run build
 ```
 
-## Bugs and Issues
+## 🐛 Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/pycoder2000/cloud-app/issues/new) here on GitHub.
 
-## Image Attribution
+## 🪜 Project structure
+
+```bash
+📦 root
+├── 🗂️ public                 # Holds favicons and other assets
+├── 🗂️ src                    # Files to change the content of pages
+│   ├── 🗂️ static             # Holds images, favicons, and other assets
+│   │   ├── 🗂️ images         # Image Files
+│   │   └── 🗂️ js             # Javascript Files
+│   ├── 🗂️ components         # React files to customize the components for the site
+│   ├── 📝 App.js             # Js file to create routes and navigation
+│   ├── 📝 index.css          # Main CSS file
+│   └── 📝 index.js           # Main Js file
+└── 📝 tailwind.config.js     # Contains tailwind stylesheet to change the look
+```
+
+## ✒️ Image Attribution
 
 [Hero vector created by freepik.com](https://www.freepik.com/free-vector/isometric-education-illustration_3940819.htm#page=1&query=isometric%20plane&position=1)
