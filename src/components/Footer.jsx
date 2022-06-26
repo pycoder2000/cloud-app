@@ -194,7 +194,16 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500">
-        <p className="py-4">2022 Workflow, LLC. All rights reserved</p>
+        <div className="text-sm text-gray-600 mr-4">
+          Made by{" "}
+          <a
+            className="text-blue-600 hover:underline"
+            href="https://cruip.com/"
+          >
+            Cruip
+          </a>
+          . All rights reserved.
+        </div>
         <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
           <FaFacebook className="text-white hover:text-indigo-600" />
           <FaInstagram className="text-white hover:text-indigo-600" />

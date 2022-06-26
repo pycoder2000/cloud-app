@@ -15,15 +15,10 @@ const Hero = () => {
       name="home"
       className="w-full h-screen bg-zinc-200 flex flex-col justify-between"
     >
-      {/* <ScriptTag
-        isHydrating={true}
-        type="text/javascript"
-        src="../assets/js/ScrollToTop.js"
-      /> */}
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
         <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
           <p className="text-2xl">Unique Sequencing & Production</p>
-          <h1 className="py-3 text-5xl md:text-7xl font-bold">
+          <h1 className="py-3 text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
             Cloud Management
           </h1>
           <p className="text-2xl">This is our Tech brand.</p>

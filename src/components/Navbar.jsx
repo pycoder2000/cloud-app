@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 //import { animateScroll as scroll} from 'react-scroll'
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -9,10 +9,57 @@ const Navbar = () => {
 
   const handleClose = () => setNav(!nav);
 
+  const [top, setTop] = useState(true);
+
+  // detect whether user has scrolled the page down by 10px
+  useEffect(() => {
+    const scrollHandler = () => {
+      window.pageYOffset > 10 ? setTop(false) : setTop(true);
+    };
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [top]);
+
   return (
-    <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
+    <div
+      className={`fixed w-screen h-[80px] z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
+        !top && "bg-zinc-200 backdrop-blur-sm drop-shadow-lg"
+      }`}
+    >
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div className="flex items-center">
+          <div className="flex-shrink-0 mr-4 ml-6">
+            {/* Logo */}
+            <Link to="/" className="block" aria-label="Cruip">
+              <svg
+                className="w-8 h-8"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <radialGradient
+                    cx="21.152%"
+                    cy="86.063%"
+                    fx="21.152%"
+                    fy="86.063%"
+                    r="79.941%"
+                    id="header-logo"
+                  >
+                    <stop stopColor="#4FD1C5" offset="0%" />
+                    <stop stopColor="#81E6D9" offset="25.871%" />
+                    <stop stopColor="#338CF5" offset="100%" />
+                  </radialGradient>
+                </defs>
+                <rect
+                  width="32"
+                  height="32"
+                  rx="16"
+                  fill="url(#header-logo)"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </Link>
+          </div>
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">BRAND.</h1>
           <ul className="hidden md:flex">
             <li>
